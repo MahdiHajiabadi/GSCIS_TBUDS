@@ -1,4 +1,4 @@
-package graph_sum;
+package graph_sum_lossy;
 import it.unimi.dsi.fastutil.ints.IntArrayList;
 import it.unimi.dsi.fastutil.ints.IntArrays;
 import it.unimi.dsi.fastutil.ints.IntIterator;
@@ -10,7 +10,7 @@ import com.google.common.collect.Sets;
 import it.unimi.dsi.webgraph.ImmutableGraph;
 import java.io.*;
 
-public class BinarySearchApproachHash{
+public class TBUDS{
 	static String directory = "../../sets/";
 	static String sym = "-sym";
 	static String filename;
