@@ -1,4 +1,4 @@
-package graph_sum;
+package graph_sum_lossy;
 
 public class UnionFind {
 
