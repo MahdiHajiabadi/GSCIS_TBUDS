@@ -19,8 +19,10 @@ This is one of the lossless proposed method discussed in the paper.
 1. Navigate to the directory Java files exist.
 2. Create a new "bin" directory
 3. Compile GSCIS.java and Cluster.java (the required jar files are in the lib directory)
+
   javac -cp "lib/*" -d bin/ GSCIS.java Cluster.java
 4. Run the GSCIS.class like the following:
+
   java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 
 
