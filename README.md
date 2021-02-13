@@ -17,7 +17,8 @@ There are four implementaion in this repository
 This is one of the lossless proposed method discussed in the paper. 
 ## How to run it?
 1. Navigate to the directory Java files exist.
-2. Create a new "bin" directory
+2. Create a new directory named "bin" (mkdir bin)
+3. Create a new directory named "output" (mkdir output)
 3. Compile GSCIS.java and Cluster.java (the required jar files are in the lib directory)
 
   javac -cp "lib/*" -d bin/ GSCIS.java Cluster.java
@@ -26,6 +27,11 @@ This is one of the lossless proposed method discussed in the paper.
 
   java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 
+3 files are saved in output directory: 
+
+1. cnr-2000-sym-noself-summary.output (showing the reduction in nodes and running time)
+2. cnr-2000-sym-noself-summary.supernodes (representing the set of nodes per each supernode)
+3. cnr-2000-sym-noself-summary.superedges (showing the superedges among supernodes) 
 
 
   
