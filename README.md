@@ -86,5 +86,15 @@ java -cp "lib/*":"bin/" graph_sum.SWeG input_graph number_of_iteration print_ite
 
 The state-of-the-art (lossless/lossy) utility-based graph summarization. You can read the paper [here](http://www.vldb.org/pvldb/vol12/p335-kumar.pdf) for more information. 
 ## How to run it?
+1. Navigate to the directory Java files exist.
+2. Create a new directory named "bin" (mkdir bin)
+3. Create a new directory named "output" (mkdir output)
+4. Compile UDS.java and SuperNode.java SuperGraph.java SuperEdge.java and UnionFind.java (the required jar files are in the lib directory)
+
+javac -cp "lib/*" -d bin/ UnionFind.java UDS.java Super*.java
+
+5. Run the UDS.class like the following:
+
+java -cp "lib/*":"bin/" graph_sum.UDS input_graph twohop_graph utility_threshold node_centrality
 
 
