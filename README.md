@@ -122,7 +122,7 @@ sort -nk 1 edgelistfile | uniq > edgelistsortedfile
 Run:
 
 ```
-java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph edgelistsortedfile  dummyBasename
+java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph edgelistsortedfile  dummy Basename
 ```
 
 For example:
