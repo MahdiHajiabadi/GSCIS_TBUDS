@@ -15,7 +15,10 @@ There are three implementaion in this repository
 # G-SCIS (Lossless Grpah Summarization)
 
 This is one of the lossless proposed method discussed in the paper. 
-## Hoe to Run it?
+## How to run it?
+
+javac -cp "lib/*" -d bin/ Optimal.java Cluster.java
+
 
 
 
