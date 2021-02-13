@@ -14,6 +14,11 @@ There are three implementaion in this repository
 
 # G-SCIS (Lossless Grpah Summarization)
 
+This is one of the lossless proposed method discussed in the paper. 
+## Hoe to Run it?
+
+
+
 
 # T-BUDS (A Lossy Grpah Summarization)
 
