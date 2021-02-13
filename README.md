@@ -25,7 +25,9 @@ This is one of the lossless proposed method discussed in the paper.
   
 4. Run the GSCIS.class like the following:
 
-  java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
+java -cp "lib/*":"bin/" graph_sum.GSCIS input-graph
+
+java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 
 3 files are saved in output directory: 
 
