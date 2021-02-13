@@ -33,6 +33,10 @@ java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 
 1. cnr-2000-sym-noself-summary.output (showing the reduction in nodes and running time)
 2. cnr-2000-sym-noself-summary.supernodes (representing the set of nodes per each supernode)
+
+# Remarks
+All the input graphs should be in the webgraph format. In order to convert the edgelist into the webgraph format you should do the following steps:
+
 3. cnr-2000-sym-noself-summary.superedges (showing the superedges among supernodes) 
 
 # T-BUDS (A Lossy Grpah Summarization)
@@ -96,5 +100,46 @@ javac -cp "lib/*" -d bin/ UnionFind.java UDS.java Super\*.java
 5. Run the UDS.class like the following:
 
 java -cp "lib/*":"bin/" graph_sum.UDS input_graph twohop_graph utility_threshold node_centrality
+
+
+# Remarks 
+Available datasets in this format can be found in: <http://law.di.unimi.it/datasets.php>
+
+The first two files are for the forward (regular) graph. The other two are for the transposed graph. What's missing is the "offsets" file. This can be easily created by running: 
+```
+java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -o -O -L cnr-2000
+```
+
+### *Converting Edgelist Format to WebGraph Format*
+
+This section is for the case when your graph is given a text file of edges (known as edgelist). *If your graph is already in WebGraph format, skip to the next section.*
+
+It is very easy to convert an edgelist file into WebGraph format. I am making the folloiwng assumptions:
+
+1. The graph is unlabeled and the vertices are given by consecutive numbers, 0,1,2,... 
+   (If there are some vertices "missing", e.g. you don't have a vertex 0 in your file, it's not a problem. WebGraph will create dummy vertices, e.g. 0, that does not have any neighbor.)
+2. The edgelist file is TAB separated (not comma separated).
+
+Now, to convert the edgelist file to WebGraph format execute the following steps:
+
+Sort the file, then remove any duplicate edges:
+
+```
+sort -nk 1 edgelistfile | uniq > edgelistsortedfile
+```
+
+(If you are on Windows, download *sort.exe* and *uniq.exe* from <http://gnuwin32.sourceforge.net/packages/coreutils.htm>)
+
+Run:
+
+```
+java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph edgelistsortedfile  dummyBasename
+```
+
+For example:
+
+```
+java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph car-2000.txt  cnr-2000
+```
 
 
