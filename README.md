@@ -34,10 +34,6 @@ java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 1. cnr-2000-sym-noself-summary.output (showing the reduction in nodes and running time)
 2. cnr-2000-sym-noself-summary.supernodes (representing the set of nodes per each supernode)
 
-# Remarks
-All the input graphs should be in the webgraph format. In order to convert the edgelist into the webgraph format you should do the following steps:
-
-3. cnr-2000-sym-noself-summary.superedges (showing the superedges among supernodes) 
 
 # T-BUDS (A Lossy Grpah Summarization)
 
