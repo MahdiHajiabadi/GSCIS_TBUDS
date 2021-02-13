@@ -65,7 +65,7 @@ node_centrality: the centrality score of each node (the first column is the node
 
 # SWeG (Lossless/Lossy Graph Summarization)
 
-SWeG is one of the state-of-the-art algorithms based on correction-set framework. You can download the paper [here](https://dl.acm.org/doi/10.1145/3308558.3313402)
+SWeG is one of the state-of-the-art algorithms based on correction-set framework. You can download the paper from [here](https://dl.acm.org/doi/10.1145/3308558.3313402)
 ## How to run it? 
 1. Navigate to the directory Java files exist.
 2. Create a new directory named "bin" (mkdir bin)
