@@ -1,13 +1,13 @@
 # GSCIS_TBUDS
 
 Requirements:
-webgraph-3.4.3
-dsiutils-2.2.3
-fastutil-6.6.3
-jsap-2.1
-sux4j-3.2.2
-trove-3.1a1-src
-javatuples-1.2
+1. webgraph-3.4.3
+2. dsiutils-2.2.3
+3. fastutil-6.6.3
+4. jsap-2.1
+5. sux4j-3.2.2
+6. trove-3.1a1-src
+7. javatuples-1.2
 
 
 There are four implementaion in this repository
