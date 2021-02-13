@@ -103,24 +103,17 @@ java -cp "lib/*":"bin/" graph_sum.UDS input_graph twohop_graph utility_threshold
 
 
 # Remarks 
-Available datasets in this format can be found in: <http://law.di.unimi.it/datasets.php>
+All the input graphs should be in the [webgraph](https://www.ics.uci.edu/~djp3/classes/2008_01_01_INF141/Materials/p595-boldi.pdf) format because of its wonderful performance in compressing graphs. Available datasets in this format can be found in: <http://law.di.unimi.it/datasets.php>
 
-The first two files are for the forward (regular) graph. The other two are for the transposed graph. What's missing is the "offsets" file. This can be easily created by running: 
-```
-java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -o -O -L cnr-2000
-```
 
 ### *Converting Edgelist Format to WebGraph Format*
 
-This section is for the case when your graph is given a text file of edges (known as edgelist). *If your graph is already in WebGraph format, skip to the next section.*
+This section is for the case when your graph is given a text file of edges (known as edgelist).
 
 It is very easy to convert an edgelist file into WebGraph format. I am making the folloiwng assumptions:
 
-1. The graph is unlabeled and the vertices are given by consecutive numbers, 0,1,2,... 
-   (If there are some vertices "missing", e.g. you don't have a vertex 0 in your file, it's not a problem. WebGraph will create dummy vertices, e.g. 0, that does not have any neighbor.)
-2. The edgelist file is TAB separated (not comma separated).
 
-Now, to convert the edgelist file to WebGraph format execute the following steps:
+Now, to convert the edgelist (TAB seprated) file to WebGraph format execute the following steps:
 
 Sort the file, then remove any duplicate edges:
 
@@ -139,7 +132,7 @@ java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph edgelistsort
 For example:
 
 ```
-java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph car-2000.txt  cnr-2000
+java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph cnr-2000.txt  cnr-2000
 ```
 
 
