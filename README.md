@@ -65,4 +65,6 @@ node_centrality: the centrality score of each node (the first column is the node
 
 # SWeG (Lossless/Lossy Graph Summarization)
 
+SWeG is one of the state-of-the-art algorithms based on correction-set framework. You can download the paper [here](https://dl.acm.org/doi/10.1145/3308558.3313402)
+
 # UDS (Utility-Driven Graph Summarization)
