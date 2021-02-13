@@ -84,5 +84,7 @@ java -cp "lib/*":"bin/" graph_sum.SWeG input_graph number_of_iteration print_ite
 
 # UDS (Utility-Driven Graph Summarization)
 
-One of the state-of-the-art (lossless/lossy) utility-based graph summarization. You can read the paper [here](http://www.vldb.org/pvldb/vol12/p335-kumar.pdf)
+The state-of-the-art (lossless/lossy) utility-based graph summarization. You can read the paper [here](http://www.vldb.org/pvldb/vol12/p335-kumar.pdf) for more information. 
+## How to run it?
+
 
