@@ -91,7 +91,7 @@ The state-of-the-art (lossless/lossy) utility-based graph summarization. You can
 3. Create a new directory named "output" (mkdir output)
 4. Compile UDS.java and SuperNode.java SuperGraph.java SuperEdge.java and UnionFind.java (the required jar files are in the lib directory)
 
-javac -cp "lib/*" -d bin/ UnionFind.java UDS.java Super*.java
+javac -cp "lib/*" -d bin/ UnionFind.java UDS.java Super\*.java
 
 5. Run the UDS.class like the following:
 
