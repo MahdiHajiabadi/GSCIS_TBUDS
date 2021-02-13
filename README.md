@@ -35,14 +35,12 @@ java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 2. cnr-2000-sym-noself-summary.supernodes (representing the set of nodes per each supernode)
 3. cnr-2000-sym-noself-summary.superedges (showing the superedges among supernodes) 
 
-
-  
-
-
-
-
-
 # T-BUDS (A Lossy Grpah Summarization)
+
+T-BUDS is a utility-based lossy graph summarization. The utility is computed based on the capability of reconstructed graph in not missing actual edges as well as not introducing any spurious edges. Each actual edge <u,v> has a weight which is defined based on the centrality score of its endpoint nodes and the weight of each spurious edge is a constant small number. We used the PageRank centrality score in assining weight to edges.   
+
+The input graph can be either the original graph or the G-SCIS lossless summary graph. If your input graph is the G-SCIS lossless please make sure that you convert the G-SCIS summary into the webgraph format. The procedures are put in Remakrs section. 
+
 
 # SWeG (Lossless/Lossy Graph Summarization)
 
