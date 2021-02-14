@@ -99,17 +99,15 @@ java -cp "lib/*":"bin/" graph_sum.UDS input_graph twohop_graph utility_threshold
 
 
 # Remarks 
-All the input graphs should be in the [webgraph](https://www.ics.uci.edu/~djp3/classes/2008_01_01_INF141/Materials/p595-boldi.pdf) format because of its wonderful performance in compressing graphs. Available datasets in this format can be found in: <http://law.di.unimi.it/datasets.php>
+All the input graphs should be in the [webgraph](https://www.ics.uci.edu/~djp3/classes/2008_01_01_INF141/Materials/p595-boldi.pdf) format because of its wonderful performance in compressing graphs. The datasets in this format can be found in: <http://law.di.unimi.it/datasets.php>
 
 
 ### *Converting Edgelist Format to WebGraph Format*
 
-This section is for the case when your graph is given a text file of edges (known as edgelist).
-
-It is very easy to convert an edgelist file into WebGraph format.
 
 
-Now, to convert the edgelist (TAB separated) file to WebGraph format execute the following steps:
+
+To convert the edgelist (TAB separated) file to WebGraph format you should execute the following steps:
 
 Sort the file, then remove any duplicate edges:
 
