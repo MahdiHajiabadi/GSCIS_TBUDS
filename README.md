@@ -10,9 +10,9 @@ Requirements:
 7. javatuples-1.2
 
 
-There are four implementaion in this repository
+There are four implementation in this repository
 
-# G-SCIS (Lossless Grpah Summarization)
+# G-SCIS (Lossless Graph Summarization)
 
 This is one of the lossless proposed method discussed in the paper. 
 ## How to run it?
@@ -35,11 +35,11 @@ java -cp "lib/*":"bin/" graph_sum.GSCIS cnr-2000-sym-noself
 2. cnr-2000-sym-noself-summary.supernodes (representing the set of nodes per each supernode)
 
 
-# T-BUDS (A Lossy Grpah Summarization)
+# T-BUDS (A Lossy Graph Summarization)
 
-T-BUDS is a utility-based lossy graph summarization. The utility is computed based on the capability of reconstructed graph in not missing actual edges as well as not introducing any spurious edges. Each actual edge <u,v> has a weight which is defined based on the centrality score of its endpoint nodes and the weight of each spurious edge is a constant small number. We used the PageRank centrality score in assining weight to edges.   
+T-BUDS is a utility-based lossy graph summarization. The utility is computed based on the capability of reconstructed graph in not missing actual edges as well as not introducing any spurious edges. Each actual edge <u,v> has a weight which is defined based on the centrality score of its endpoint nodes and the weight of each spurious edge is a constant small number. We used the PageRank centrality score in assinging weight to edges.   
 
-The input graph can be either the original graph or the G-SCIS lossless summary graph. If your input graph is the G-SCIS lossless please make sure that you convert the G-SCIS summary into the webgraph format. The procedures are put in Remakrs section.
+The input graph can be either the original graph or the G-SCIS lossless summary graph. If your input graph is the G-SCIS lossless please make sure that you convert the G-SCIS summary into the webgraph format. The procedures are put in Remarks section.
 
 ## How to run it?
 1. Navigate to the directory Java files exist.
@@ -57,7 +57,7 @@ utility_threshold: a float number between [0,1]
 
 twohopMST_graph: the maximum spanning tree of V nodes and V-1 edges which each edge is connected nodes with distance 2
 
-node_centrality: the centrality score of each node (the first column is the node id and the second column is the centrality score of node. a txt file with tab delimeter)
+node_centrality: the centrality score of each node (the first column is the node id and the second column is the centrality score of node. a txt file with tab delimiter)
 
 
 
@@ -106,10 +106,10 @@ All the input graphs should be in the [webgraph](https://www.ics.uci.edu/~djp3/c
 
 This section is for the case when your graph is given a text file of edges (known as edgelist).
 
-It is very easy to convert an edgelist file into WebGraph format. I am making the folloiwng assumptions:
+It is very easy to convert an edgelist file into WebGraph format.
 
 
-Now, to convert the edgelist (TAB seprated) file to WebGraph format execute the following steps:
+Now, to convert the edgelist (TAB separated) file to WebGraph format execute the following steps:
 
 Sort the file, then remove any duplicate edges:
 
@@ -130,5 +130,3 @@ For example:
 ```
 java -cp "lib/*" it.unimi.dsi.webgraph.BVGraph -g ArcListASCIIGraph cnr-2000.txt  cnr-2000
 ```
-
-
