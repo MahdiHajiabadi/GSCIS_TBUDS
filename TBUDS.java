@@ -235,7 +235,6 @@ public class TBUDS{
 		double value;
 		double seCost,nseCost;
 
-		// Adding by Mahdi 
 		double[] sp_total = new double[n];
 		for(SuTempName=0;SuTempName<numSuperNodes;SuTempName++){
 			SuName=uf.getOriginalName(SuTempName);
