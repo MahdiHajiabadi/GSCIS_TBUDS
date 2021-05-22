@@ -1,6 +1,6 @@
 This is the code of my publication in SIGKDD 2021 conference. TBUDS and G-SCIS are our proposed algorithm for lossy and lossless graph summarization respectively. 
 
-Also there are some other works in the literature which we coded their methods up (like [SWeG][https://dl.acm.org/doi/10.1145/3308558.3313402] and UDS). 
+Also there are some other works in the literature which we coded their methods up (like SWeG[https://dl.acm.org/doi/10.1145/3308558.3313402] and UDS [http://www.vldb.org/pvldb/vol12/p335-kumar.pdf]). 
 
 # GSCIS_TBUDS
 
