@@ -10,7 +10,7 @@ import com.google.common.collect.Sets;
 import it.unimi.dsi.webgraph.ImmutableGraph;
 import java.io.*;
 
-public class Optimal{
+public class GSCIS{
 	static String outputDirectory = "output/";
     private static String GRAPH_BASENAME;
     private static String UTILITY_OUTPUT_FILE;
